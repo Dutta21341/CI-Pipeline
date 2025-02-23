@@ -1,13 +1,15 @@
-[tool.poetry]
+[project]
 name = "learning-ci-pipeline"
 version = "0.1.0"
 description = ""
-authors = ["Sanskar Dutta <duttasanskar@gmail.com>"]
+authors = [
+    { name = "Sanskar Dutta", email = "duttasanskar@gmail.com" }
+]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 
-[tool.poetry.packages]
+[tool.poetry]
 packages = [{ include = "learning_ci_pipeline", from = "src" }]
 
 [build-system]
@@ -17,4 +19,3 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.group.dev.dependencies]
 pylint = "^3.3.4"
 ruff = "^0.9.6"
-
